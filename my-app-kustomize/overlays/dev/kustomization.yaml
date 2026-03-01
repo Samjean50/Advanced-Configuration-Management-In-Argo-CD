@@ -1,5 +1,8 @@
-bases:
+resources:
 - ../../base
 namePrefix: dev-
 patches:
-- patch.yaml
+- path: patch.yaml
+  target:
+    kind: Deployment
+    name: my-app-kustomize
